@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(61, 219, 240, 0.712);
+}
+#margen-titulo {
+    margin-left: 20px;
+}
+header {
+    display: flex;
+    height: 70px;
+    background: linear-gradient(to right, rgb(97, 97, 105), rgb(0, 0, 0));
+    color: #fff;
+    padding: 1px;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.principal {
+    margin-right: 40%;
+}
+.container .barra {
+    border:solid 1px #ccc;
+    width: 250px;
+    height: 20px;
+    border-radius: 30px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #d4cdcd;
+}
+
+.container .boton {
+    border: solid 1px white;
+    border-radius: 30px;
+}
+.container .boton:hover {
+    background-color:aqua;
+}
+nav a:hover {
+    color: aqua;
+}
+.navegadores {
+    text-align:right;
+}
+.navegadores a {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+}
+.div-cards {
+    display: flex;
+    flex-direction: row;
+    margin-left: 700px;
+}
+.card {
+    width: 205px;
+    height: 350px;
+    margin: 20px;
+    border: solid 0.5px;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.644), rgb(255, 255, 255));
+    transition: 0.5s;
+
+}
+.card:hover {
+    box-shadow: 5px 5px 20px;
+    transform: translatey(-3%);
+}
+.card img {
+    width: 205px;
+    height: 260px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    line-height: 1.5;
+    position: relative
+}
+footer {
+    background: linear-gradient(to right, rgb(97, 97, 105), rgb(0, 0, 0));
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    justify-items: end;
+}
+@media (max-widht: 700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+}
